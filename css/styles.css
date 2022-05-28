@@ -1,0 +1,84 @@
+/* CSS Import*/
+
+@import url(menu-nav/styles-menu-nav.css);
+@import url(home/styles-home.css);
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+    .container-margin{
+        max-width: 1210px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1024px){
+        .container-margin{
+            max-width: 850px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .container-margin{
+            max-width: 650px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 425px){
+        .container-margin{
+            max-width: 340px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        .container-margin{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-style: normal;
+    }
+
+    .btn-whatsapp {
+    display: block;
+    width: 70px;
+    height: 70px;
+    color:#fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 3000;
+    transition: 1s all;
+    }
+
+    .icono-whatsapp{
+        width: 70px;
+    }
+
+    .btn-whatsapp:hover{
+        transform: translateY(-10px);
+        transition: 1s all;
+    }
+    
+    @media (prefers-color-scheme: light) {
+        .body.dark-scheme {
+        height: 100%;
+        background: black;
+        color: white;
+    }
+
+/*background: url(../../assets/home/spec-check.svg);*/

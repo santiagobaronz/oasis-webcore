@@ -1,0 +1,213 @@
+.menu{
+    width: 100%;
+    height: 80px;
+    transition: 1s all;
+    position: fixed;
+    /*background-color: #008EF1;*/
+    background-color: #fff;
+    z-index: 4000;
+    box-shadow: 0px 0px 40px #000;
+}
+
+
+.logo-oasiswbc{
+    width: 260px;
+    display: block;
+    margin: 5px auto;
+}
+
+.menu-items-1, .menu-items-2{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    outline: none;
+}
+
+.menu-items-1 a , .menu-items-2 a{
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 35px 0px 35px;
+    height: 100%;
+    outline: none;
+}
+
+.menu-items-1 a p , .menu-items-2 a p{
+    position: relative;
+    margin-top: 25px;
+    font-weight: 500;
+    outline: none;
+}
+
+.menu-items-1 a:hover , .menu-items-2 a:hover{
+    /*background-color: #026cb2;*/
+    background-color: rgb(235, 235, 235);
+    outline: none;
+}
+
+.menu-items-1 a:hover .hover-animation-menu{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.menu-items-2 a:hover .hover-animation-menu{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.hover-animation-menu{
+    opacity: 0;
+    list-style: none;
+    position: absolute;
+    bottom: -2.5px;
+    background-color: #008EF1;
+    width: 100%;
+    height: 5px;
+    border-radius: 15px;
+    left: 0;
+    transition: 0.5s all;
+}
+
+
+.active-page{
+    opacity: 1;
+}
+
+.menu-dropdown{
+    display: none;
+}
+
+/*
+
+██████╗░███████╗░██████╗██████╗░░█████╗░███╗░░██╗░██████╗██╗██╗░░░██╗███████╗
+██╔══██╗██╔════╝██╔════╝██╔══██╗██╔══██╗████╗░██║██╔════╝██║██║░░░██║██╔════╝
+██████╔╝█████╗░░╚█████╗░██████╔╝██║░░██║██╔██╗██║╚█████╗░██║╚██╗░██╔╝█████╗░░
+██╔══██╗██╔══╝░░░╚═══██╗██╔═══╝░██║░░██║██║╚████║░╚═══██╗██║░╚████╔╝░██╔══╝░░
+██║░░██║███████╗██████╔╝██║░░░░░╚█████╔╝██║░╚███║██████╔╝██║░░╚██╔╝░░███████╗
+╚═╝░░╚═╝╚══════╝╚═════╝░╚═╝░░░░░░╚════╝░╚═╝░░╚══╝╚═════╝░╚═╝░░░╚═╝░░░╚══════╝
+
+*/
+
+@media screen and (max-width: 1805px){
+    .menu-items-1 a, .menu-items-2 a{
+        padding: 0 15px 0px 15px;
+    }
+}
+
+@media screen and (max-width: 1325px){
+
+    .hide-items-responsive{
+        display: none;
+        transition: 1s all;
+    }
+
+    .menu-items-1 a, .menu-items-2 a{
+        padding: 0 35px 0px 35px;
+    }
+
+    .menu-shadow{
+        box-shadow: 0px 0px 40px #000;
+    }
+
+    .menu-items-1 , .menu-items-2{
+        background-color: #fff;
+        width: 100%;
+        border-bottom: none;
+        transition: 1s all;
+    }
+
+    .menu-items-2{
+        margin-top: -2px;
+    }
+
+    .padding-fix-responsive{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    
+    .menu-dropdown{
+        position: absolute;
+        right: 100px;
+        top: 17px;
+        width: 45px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .hide-items-responsive{
+        display: none;
+        transition: 1s all;
+    }
+    
+    .menu-dropdown{
+        right: 20px;
+        top: 17px;
+    }
+    .logo-oasiswbc{
+        margin: 5px 0px 5px 20px;
+    }
+    .menu-items-1 , .menu-items-2 {
+        display: none;        
+        transform: translateX(800px);
+        
+    }
+    .menu-items-1 a, .menu-items-2 a{
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    .menu-items-1 a p, .menu-items-2 a p{
+        margin: 0;
+        padding-top: 30px;
+    }
+    .col-final-menu{
+        margin-top: 26px;
+    }
+    .menu-items-2{
+        margin: 0;
+    }
+
+    .hover-animation-menu{
+        width: 80%;
+        display: block;
+        margin: auto;
+        left: 40px;
+    }
+
+    .menu-shadow{
+        box-shadow: none;
+    }
+
+    .menu-mobile-animation-1{
+        display: inline-block;
+        transform: translateX(500px);
+        animation-name: active-menu;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+
+    @keyframes active-menu{
+        from{transform: translateX(500px); opacity: 0;}
+        to{transform: translateX(0); opacity: 1;}
+    }
+
+    .menu-mobile-animation-2{
+        display: inline-block;
+        animation-name: deactive-menu;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+
+    @keyframes deactive-menu{
+        from{transform: translateX(0); opacity: 1;}
+        to{transform: translateX(500px); opacity: 0;}
+    }
+
+}
