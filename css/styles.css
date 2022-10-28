@@ -46,9 +46,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
     }
+
+    body::-webkit-scrollbar{
+        width: 7px;
+        background-color: transparent;
+    }
+    body::-webkit-scrollbar-track{
+        background-color: #121a2f;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: #2F3241;
+        border-radius: 5px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+      }
 
     .btn-whatsapp {
     display: block;
@@ -78,7 +94,7 @@
         .body.dark-scheme {
         height: 100%;
         background: black;
-        color: white;
+        color: white;}
     }
 
 /*background: url(../../assets/home/spec-check.svg);*/

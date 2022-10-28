@@ -1,112 +1,115 @@
 /*Header*/
 
-.banner{
-    overflow: hidden;
-    background: url(../../assets/home/img-prueba1.jpg) fixed no-repeat 50% 50%;
-    background-size: cover;
-    background-size: 100%;
-    height: 930px;
-    object-fit: cover;
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #121a2f;
 }
 
 .bg-banner{
-    width: 100%;
-    height: 930px;
+    padding-top: 150px;
 }
 
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.img-banner{
+    position: relative;
+}
+
+.bg-img-top-menu{
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-project-preview{
+    position: absolute;
+    width: 800px;
+    top: 80px;
+    left: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px 7px rgb(87 136 197);
+    z-index: 1;
+    transition: ease 0.3s;
+}
+
+.mobile-project-preview{
+    position: absolute;
+    width: 300px;
+    top: -30px;
+    right: 180px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 7px rgba(87, 137, 197, 0.403);
+    z-index: 2;
+    transition: ease 0.3s;
+}
+
+.mobile-project-preview:hover, .desktop-project-preview:hover{
+    transform: translate(3px,-3px);
+    transition: ease 0.3s;
+}
 
 .txt-banner{
-    display: block;
-    margin: 300px 130px;
-    animation-name:txt-banner-animation;
-    animation-duration: 4s;
-    overflow: hidden;
-    text-align: center;
-}
-    
-
-@keyframes txt-banner-animation{
-    0%{opacity: 0; transform: translateX(500px);}
-    100%{opacity: 1;}
-}
-
-.animation-options{
-    animation-name: animation-banner-text;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-delay: 4s;
-    animation-timing-function: ease-out;
-    
-}
-
-@keyframes animation-banner-text{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
+    margin: 40px 50px auto 180px;
 }
 
 .txt-banner h1{
     color: #fff;
-    font-size: 90px;
-
+    font-weight: 800;
+    font-size: 65px;
+    margin-bottom: 30px;
 }
 
-.wave-separate-header{
-    width: 100%;
-    height: 200px;
-    margin-top: -30px;
-}
-
-.txt-banner p:nth-child(2){
+.txt-banner p{
     color: #fff;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+.main-button{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #1c6de5;
+    padding: 15px;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border-style: none;
+    border-radius: 15px;
     font-size: 18px;
-}
-
-.contact-form-banner{
-    padding: 15px 30px;
-    border-radius: 25px;
-    border-style: none;
-    outline: none;
-    width: 295px;
-    font-size: 15px;
-}
-
-.contact-form-banner:nth-child(2){
-    margin-left: -45px;
-    width: 315px;
-    padding: 15px 10px;
-}
-
-.contact-form-banner::placeholder{
-    font-size: 15px;
-}
-
-.btn-submit-banner{
-    padding: 15px 20px;
-    border-radius: 25px;
-    border-style: none;
-    margin-left: -55px;
-    outline: none;
     cursor: pointer;
-    background-color: #28B463;
-    font-size: 15px;
-    transition: 1s all;
-    color: #fff;
+    margin-bottom: 30px;
 }
 
+.features ul li{
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+}
 
-
-.btn-submit-banner:hover{
-    background-color: #13c25c;
-    transition: 1s all;
+.features ul li::before{
+    padding-right: 15px;
+    width: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 5px;
+    content: url("../../assets/home/icons/check.svg");
 }
 
 /* Section 1*/
 
 .first-section-box{
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .img-section-1{
@@ -121,7 +124,7 @@
 .txt-section-1 h2 {
     font-size: 40px;
     text-align: left;
-    margin-top: 80px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 

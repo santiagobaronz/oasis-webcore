@@ -1,21 +1,5 @@
 'use strict'
 
-
-/* Active page */
-
-var URLactual = window.location;
-var menu_bar_line = document.getElementById("menu_bar_line");
-var menu_links = [document.getElementById("link-1").href, document.getElementById("link-2").href,
-                document.getElementById("link-3").href, document.getElementById("link-4").href,
-                document.getElementById("link-5").href, document.getElementById("link-6").href]
-
-for(var i = 0; i <= 5; i++){
-    if(menu_links[i]== URLactual){
-        menu_bar_line.classList.add("active-page");
-    }
-}
-
-
 /* Traer y ocultar preguntas con botones */
 
     /* Cajas de preguntas*/
@@ -136,7 +120,7 @@ for(var i = 0; i <= 5; i++){
 
     
 
-    window.onscroll = function() {
+    /*window.onscroll = function() {
         var scrollY_var = window.scrollY;
         if(ubicacion_principal > scrollY_var){
             menu_bar.style.top ="0";
@@ -164,7 +148,7 @@ for(var i = 0; i <= 5; i++){
             }
         }
         ubicacion_principal = scrollY_var;
-    };
+    };*/
 
     /* Portafolio Slider */
 
