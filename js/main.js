@@ -118,37 +118,6 @@
         
     }
 
-    
-
-    /*window.onscroll = function() {
-        var scrollY_var = window.scrollY;
-        if(ubicacion_principal > scrollY_var){
-            menu_bar.style.top ="0";
-            menu_bar.style.boxShadow =" 0px 0px 40px #000";
-            menu_bar.style.transition = "1s all";
-            
-        }else{
-            if(scrollY_var < 67){
-                menu_bar.style.top ="0";
-                menu_bar.style.transition = "1s all";
-                menu_bar.style.boxShadow =" 0px 0px 40px #000";
-                
-            }else{
-                menu_bar.style.top ="-100px";
-                menu_bar.style.transition = "0.2s all";
-                menu_items1.classList.add("hide-items-responsive");
-                menu_items2.classList.add("hide-items-responsive");
-                menu_items1.style.transition = "0.2s all";
-                menu_items2.style.transition = "0.2s all";
-                if(status_menu_toggle==1){
-                    menu_items1.classList.add("menu-mobile-animation-2");
-                    menu_items2.classList.add("menu-mobile-animation-2");
-                }
-                status_menu_toggle = 0;
-            }
-        }
-        ubicacion_principal = scrollY_var;
-    };*/
 
     /* Portafolio Slider */
 
