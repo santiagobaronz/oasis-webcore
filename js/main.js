@@ -1,5 +1,27 @@
 'use strict'
 
+/** Menu superior */
+
+const menu = document.querySelector("#menu-bar");
+const menu_items = document.querySelectorAll("#menu-bar > .menu-section > .menu-items-1 > .link-menu > p");
+const bg_banner = document.querySelector(".bg-banner")
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY >= 950){
+        menu.classList.add("menu-scrolled");
+        menu_items.forEach(element => {
+            element.classList.add("scroll-menu");
+        });
+    }else{
+        menu.classList.remove("menu-scrolled");
+        menu_items.forEach(element => {
+            element.classList.remove("scroll-menu");
+        });
+    }
+})
+
+
+
 /* Traer y ocultar preguntas con botones */
 
     /* Cajas de preguntas*/

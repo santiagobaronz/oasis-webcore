@@ -1,13 +1,23 @@
 .menu{
     width: 100%;
     height: 78px;
-    transition: 1s all;
-    position: relative;
+    position: absolute;
     background-color: transparent;
-    /*box-shadow: 0 4px 10px rgb(0 0 0 / 8%);*/
     z-index: 4000;
     padding: 30px 180px 30px 190px !important;
+    top: 0%;
+}
+
+.menu-scrolled{
+    box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+    background-color: #FFF;
+    position: fixed;
+    padding: 15px 180px 15px 190px !important;
+}
+
+.menu-scrolled #link-5{
     color: #fff !important;
+    background-color: #1c6de5;
 }
 
 .menu{
@@ -21,10 +31,10 @@
     text-align: right;
 }
 
+
 .menu-items-1{
     font-size: 17px !important;
     align-items: center!important;
-    color: #1d1e20;
     font-weight: 600!important;
 }
 
@@ -46,9 +56,13 @@
     opacity: .6;
 }
 
+.scroll-menu{
+    color: #000 !important;
+}
+
 .menu-items-1 a p{
     font-weight: 600;
-    color: #fff !important;
+    color: #fff;
     font-size: 17px;
 }
 
@@ -59,7 +73,7 @@
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 25px;
-    border: 1px solid #fff;
+    border: 1px solid #fff !important;
 }
 
 .active-page{
