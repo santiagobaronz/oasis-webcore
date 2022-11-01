@@ -289,6 +289,8 @@ height: 10px;
     background-color: #fff;
     box-shadow: 1px 1px 45px rgb(211, 211, 211);
     transition: all 1s;
+    position: relative;
+    z-index: 200;
 }
 .box-services-s2:hover , .box-services-s2:hover ~ .btn-services button{
     transform: translateY(-20px);
@@ -332,32 +334,6 @@ height: 10px;
     text-align: center;
     color: #555555;
 }
-
-.btn-services{
-    text-decoration: none;
-}
-
-.btn-services button{
-    padding: 15px 40px;
-    border-radius: 15px;
-    outline: none;
-    border-style: none;
-    background-color: #1c6de5;
-    box-shadow: 1px 1px 25px rgb(255, 255, 255);
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    font-size: 17px;
-    font-weight: 400;
-    transition: all 0.2s;
-}
-
-.btn-services button:hover{
-    padding: 15px 45px;
-    transition: all 0.2s;
-}
-
 
 .info-box-home{
     position: relative;
@@ -425,198 +401,19 @@ height: 10px;
     background-color: #f0f6ff;
 }
 
-.autor-section{
-    overflow: hidden;
-    padding-top: 50px;
-}
-
-.txt-autors-section{
-    margin-right: 20px;
-}
-
-
-.txt-autors-section h2{
-    font-size: 38px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-}
-
-.txt-autors-section .subtitle2{
-    font-size: 22px;
-    color: #1a1b1e;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.txt-autors-section p{
-    font-size: 17px;
-}
-
-.btn-s2{
-    margin-top: 30px;
-    background-color:#1c6de5;
-    padding: 15px;
-    width: 90%;
-    color: #fff;
-    font-weight: 700;
-    outline: none;
-    border-style: none;
-    border-radius: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 2s;
-    animation-name: cambio-color-btn-s1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-.btn-s2 a{
-    color:#fff;
-    text-decoration: none;
-}
-
-.img-autor-section{
-    margin-top: 45px;
-}
-
-.img-autor{
-    width: 240px;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.column-to-hidden-items{
-    overflow: hidden;
-}
-
-.img-autor-section{
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,268px);
-    grid-template-rows: 1fr 1fr;
-    width: 250%;
-    animation-name: autor-animation;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-}
-
-.bg-autor{
+.info-img{
     width: 100%;
 }
 
-@keyframes autor-animation{
-    0%{transform: translateX(0); opacity: 1;}
-    10%{opacity: 1;}
-    20%{opacity: 1;}
-    30%{opacity: 1;}
-    40%{opacity: 1;}
-    50%{transform: translateX(-520px);}
-    60%{opacity: 1;}
-    70%{opacity: 1;}
-    80%{opacity: 1;}
-    90%{opacity: 1;}
-    100%{transform: translateX(-0px); opacity: 1;}
-}
-
-
-/*Sección 3 - metodologia*/
-
-.thrid-section-box{
-    background-color: #f0f6ff;
-}
-
-.methodology-section{
-    padding-top: 60px;
-    padding-bottom: 10px;
-}
-
-.txt-methodology{
-    margin-left: 20px;
-    text-align: left;
-}
-
-.txt-methodology h2{
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-.txt-methodology .subtitle3{
-    font-size: 22px;
-    color: #1a1b1e;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.txt-methodology p{
-    font-size: 17px;
-}
-
-.container-methodology{
-    margin-right: 0px;
-    margin-left: 40px;
-}
-
-.box-methodology-section{
-    position: relative;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    display: inline-block;
-    width: 100%;
-    z-index: 1000;
-    transition: 1s all;
-}
-
-.box-methodology-section:hover{
-    transform: translateY(-5px) translateX(5px);
-    transition: 1s all;
-}
-
-.unitary-methodology-box{
-    margin-left: 30px;
-}
-
-.unitary-methodology-box p{
-    width: 100%;
-
-}
-
-.unitary-methodology-box h3{
-    font-size: 17px;
-}
-
-.planificar{
-    background-color: #fff3cd;
-    border-color: #ffeeba;
-}
-
-.hacer{
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-}
-
-.verificar{
-    background-color: #d1ecf1;
-    border-color: #bee5eb;
-}
-
-.actuar{
-    background-color: #FFD89F;
-    border-color: #ffeeba;;
-}
-
-.icon-before-methodology-box{
-    width: 70px;
+.bg-services{
     position: absolute;
-    float: left;
-    z-index: 2000;
-    left: -40px;
-    margin-top: 10px;
+    width: 600px;
+    height: 80px;
+    content: '';
+    background: #f1f1f1;
+    top: 300px;
+    z-index: 0;
+    left: 300px;
 }
 
 
