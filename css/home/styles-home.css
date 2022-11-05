@@ -398,25 +398,47 @@ height: 10px;
 
 .second-section-box{
     margin-top: -10px;
+    padding-top: 200px;
     background-color: #f0f6ff;
 }
 
 .info-img{
     width: 100%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 25px rgb(219 219 219 / 80%);
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+    margin-left: -30px;
 }
+
+
 
 .bg-services{
     position: absolute;
     width: 600px;
     height: 80px;
     content: '';
-    background: #f1f1f1;
+    background: #f0f6ff;
     top: 300px;
     z-index: 0;
     left: 300px;
 }
 
+.second-section-text-box{
+    padding: 60px;
+}
 
+.second-section-text-box h2{
+    font-size: 35px;
+    color: rgb(14, 14, 14);
+    margin-bottom: 30px;
+}
+
+.second-section-text-box p{
+    font-size: 20px;
+}
 /* Estilos de sección de precios */
 
 
