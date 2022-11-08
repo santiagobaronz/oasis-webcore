@@ -414,7 +414,6 @@ height: 10px;
 }
 
 
-
 .bg-services{
     position: absolute;
     width: 600px;
@@ -434,11 +433,21 @@ height: 10px;
     font-size: 35px;
     color: rgb(14, 14, 14);
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .second-section-text-box p{
     font-size: 20px;
 }
+
+.second-section-text-box span{
+    font-weight: 800;
+    color: rgb(140, 140, 140);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+
 /* Estilos de sección de precios */
 
 
