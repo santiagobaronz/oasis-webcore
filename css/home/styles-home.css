@@ -498,6 +498,11 @@ height: 10px;
     margin-top: -20px;
 }
 
+.container-margin-prices{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .info-prices h2{
     text-align: center;
     font-size: 50px;
@@ -509,7 +514,7 @@ height: 10px;
 .info-prices p{
     text-align: center;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -530,161 +535,7 @@ height: 10px;
     transition: 1s all;
 }
 
-.img-prices{
-    width: 350px;
-    height: 250px;
-    object-fit:scale-down;
-}
 
-.txt-prices h3{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.txt-prices .price-from{
-    text-align: center;
-    font-size: 15px;
-    color: rgb(139, 139, 139);
-}
-
-.txt-prices .price{
-    width: 230px;
-    display: block;
-    margin: auto;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: 600;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-}
-
-.web-price{
-    color: #28B463;
-}
-
-.design-price{
-    color: #D35400;
-}
-
-.production-price{
-    color: #3498DB;
-}
-
-.txt-prices ul{
-    margin-top: 10px;
-    list-style: none;
-    text-align: center;
-}
-
-.txt-prices ul li{
-    margin-bottom: 25px;
-}
-
-.border-web{
-    position: absolute;
-    width: 180px;
-    top: 4px;
-    left: -7px;
-    transform: rotate(-90deg);
-    z-index: 2000px;
-}
-
-.border-web2{
-    position: absolute;
-    transform: rotate(90deg);
-    right: -4px;
-    bottom: 4px;
-    z-index: 2000px;
-}
-
-.border-design{
-    position: absolute;
-    width: 180px;
-    top:0;
-    right: 0;
-    z-index: 2000px;
-}
-
-.border-design2{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: "FlipH";
-    filter: FlipH;
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    -ms-filter: "FlipV";
-    filter: FlipV;
-    z-index: 2000px;
-}
-
-
-.border-production{
-    position: absolute;
-    width: 180px;
-    top:0;
-    left: 0;
-    transform: rotate(180deg);
-    z-index: 2000px;
-}
-
-.border-production2{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2000px;
-}
-
-.btn-prices{
-    text-decoration: none;
-}
-
-.btn-prices button{
-    padding: 10px 20px;
-    display: block;
-    margin: 40px auto;
-    position: relative;
-    z-index: 3000px;
-    outline: none;
-    border-style: none;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.btn-web-hover:hover ~ .btn-web{
-    background-color: #58D68D;
-}
-
-.btn-design-hover:hover ~ .btn-design{
-    background-color: #E59866 ;
-}
-
-.btn-productions-hover:hover ~ .btn-productions{
-    background-color: #85C1E9 ;
-}
-
-.btn-web{
-    background-color: #28B463;
-}
-
-.btn-design{
-    background-color: #D35400;
-}
-
-.btn-productions{
-    background-color: #3498DB;
-}
 
 /* Faq section*/
 
