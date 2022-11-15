@@ -41,6 +41,9 @@
         }
     }
 
+    body{
+        background-color: #f0f6ff;
+    }
 
     *{
     margin: 0;

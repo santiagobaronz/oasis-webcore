@@ -192,6 +192,7 @@ header{
 
 .first-section-box{
     margin-top: 80px;
+    background-color: #f0f6ff;
 }
 
 .img-section-1{
@@ -263,6 +264,7 @@ height: 10px;
     width: 100%;
     z-index: 1000;
     position: relative;
+    background-color: #fff;
 }
 
 /* Servicios de Oasis Webcore*/
@@ -398,8 +400,18 @@ height: 10px;
 
 .second-section-box{
     margin-top: -10px;
-    padding-top: 200px;
+    padding-top: 180px;
     background-color: #f0f6ff;
+}
+
+.info-section > h2{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 45px;
+}
+
+.row-info{
+    margin-bottom: 100px;
 }
 
 .info-img{
@@ -410,9 +422,15 @@ height: 10px;
     background-color: #fff;
     padding: 10px;
     display: block;
+}
+
+.info-img-margin-left{
     margin-left: -30px;
 }
 
+.info-img-margin-right{
+    margin-left: 30px;
+}
 
 .bg-services{
     position: absolute;
@@ -450,7 +468,11 @@ height: 10px;
 
 /* Estilos de sección de precios */
 
-
+.quarter-section-box {
+    background-color: #FFF;
+    padding-top: 150px;
+    margin-top: -20px;
+}
 
 .info-prices h2{
     text-align: center;
