@@ -411,7 +411,8 @@ height: 10px;
 }
 
 .row-info{
-    margin-bottom: 100px;
+    margin-bottom: 130px;
+    position: relative;
 }
 
 .info-img{
@@ -422,6 +423,8 @@ height: 10px;
     background-color: #fff;
     padding: 10px;
     display: block;
+    position: relative;
+    z-index: 10;
 }
 
 .info-img-margin-left{
@@ -430,6 +433,27 @@ height: 10px;
 
 .info-img-margin-right{
     margin-left: 30px;
+}
+
+
+.img-box-left::before{
+    position: absolute;
+    opacity: 0.3;
+    z-index: 0;
+    left: -140px;
+    top: 0;
+    content: url("../../assets/home/previews/puntos.png");
+    transform: scale(0.85);
+}
+
+.img-box-right::before{
+    position: absolute;
+    opacity: 0.3;
+    z-index: 0;
+    right: -140px;
+    top: 0;
+    content: url("../../assets/home/previews/puntos.png");
+    transform: scale(0.85);
 }
 
 .bg-services{
