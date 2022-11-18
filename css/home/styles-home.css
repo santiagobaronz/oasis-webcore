@@ -265,6 +265,7 @@ height: 10px;
     z-index: 1000;
     position: relative;
     background-color: #fff;
+    height: 70px;
 }
 
 /* Servicios de Oasis Webcore*/
@@ -499,7 +500,7 @@ height: 10px;
 }
 
 .container-margin-prices{
-    max-width: 80%;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -508,13 +509,13 @@ height: 10px;
     font-size: 50px;
     letter-spacing: 2px;
     margin-top: -50px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .info-prices p{
     text-align: center;
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 
@@ -524,10 +525,26 @@ height: 10px;
     height: 700px;
     margin: 10px;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 1px 1px 25px rgb(219, 219, 219, 0.8);
     padding: 20px;
     transition: 1s all;
+}
+
+.box-recommended::before{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #12324e;
+    border-radius: 25px 25px 0 0;
+    content: 'EL MÁS VENDIDO';
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    top: -20px;
+    left: 0;
 }
 
 .box-prices-unitary:hover{
