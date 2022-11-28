@@ -496,7 +496,7 @@ height: 10px;
 
 .container-margin-prices{
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
 }
 
 .info-prices h2{
@@ -615,12 +615,12 @@ height: 10px;
     position: relative;
 }
 
-.box-price-section p::after{
+.box-price-section p::before{
     content: 'COP';
     font-size: 12px;
     position: absolute;
-    top: 20px;
-    right: 5px;
+    bottom: -10px;
+    left: 50%;
 }
 
 .box-price-section button{
@@ -697,6 +697,13 @@ height: 10px;
     margin-left: 10px;
 }
 
+/* More services*/
+
+.more-services{
+    width: 100%;
+    height: 400px;
+    background-color: #12324e;
+}
 
 /* Faq section*/
 
