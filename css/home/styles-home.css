@@ -646,7 +646,8 @@ height: 10px;
     list-style: none;
     text-align: left;
     margin-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
 .features li{
@@ -678,6 +679,22 @@ height: 10px;
     display: inline-block;
     margin-right: 5px;
     content: url("../../assets/home/no-service.svg");
+}
+
+.show-more{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.show-more > a{
+    text-decoration: none;
+    color: #12324e;
+    font-weight: 600;
+}
+
+.down-arrow{
+    width: 10px;
+    margin-left: 10px;
 }
 
 
