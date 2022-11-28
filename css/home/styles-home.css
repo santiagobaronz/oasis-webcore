@@ -702,7 +702,7 @@ height: 10px;
 .more-services{
     width: 100%;
     height: 400px;
-    background-color: #12324e;
+    background-image: url("../../assets/home/bg-more-services.svg");
 }
 
 /* Faq section*/
