@@ -701,7 +701,7 @@ height: 10px;
 
 .more-services{
     width: 100%;
-    height: 250px;
+    height: 220px;
     background-image: url("../../assets/home/bg-more-services.svg");
     display: grid;
     place-items: center;
@@ -710,7 +710,7 @@ height: 10px;
 .box-new-services h2{
     text-align: center;
     color: #FFF;
-    font-size: 40px;
+    font-size: 35px;
     display: inline-block;
     margin-right: 50px;
     box-sizing: border-box;
@@ -718,7 +718,7 @@ height: 10px;
 
 .box-new-services a{
     font-size: 20px;
-    padding: 15px 80px;
+    padding: 15px 60px;
     color: #FFF;
     text-decoration: none;
     border: 1px solid #FFF;
@@ -726,13 +726,18 @@ height: 10px;
     display: inline-block;
     margin: 0 auto;
     transition: all 0.3s;
-    text-align: center;
+    margin-left: 50px;
 }
 
 .box-new-services a:hover{
     background-color: #FFF;
     color: #000;
     transition: all 0.3s;
+}
+
+.more-services-box{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -758,8 +763,10 @@ height: 10px;
 }
 
 .img-faq-section{
-    width: 100%;
+    width: 80%;
     position: relative;
+    display: flex;
+    margin: auto;
 }
 
 .left-side-faq-section{
